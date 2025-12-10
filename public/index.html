@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Goal Tracker</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Oben: Timer + Start/Pause -->
+    <header class="toolbar">
+      <div class="left"><h1>Goals</h1></div>
+      <div class="center"><span id="timeDisplay" class="time-badge">05:00</span></div>
+      <div class="right"><button id="toggleBtn" class="btn primary">Start</button></div>
+    </header>
+
+    <!-- 2×3 Raster: große viereckige Buttons -->
+    <main id="tiles" class="tiles"></main>
+
+    <!-- Unten: breiter Reset -->
+    <footer class="footer">
+      <button id="resetAllBtn" class="btn danger wide">Alles zurücksetzen</button>
+    </footer>
+  </div>
+
+  <script src="./client.js"></script>
+</body>
+</html>
