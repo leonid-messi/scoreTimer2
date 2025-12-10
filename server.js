@@ -10,7 +10,7 @@ const wss = new WebSocket.Server({ server });
 app.use(express.static(path.join(__dirname, 'public')));
 
 const DURATION_MS = 5 * 60 * 1000; // 5 Minuten
-const MAX_GOALS = 10;
+const MAX_GOALS = 30
 
 // Zustand
 let state = {
@@ -153,3 +153,4 @@ server.listen(PORT, function () {
   console.log('Server läuft auf http://localhost:' + PORT);
 
 });
+
