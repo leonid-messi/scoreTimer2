@@ -15,7 +15,7 @@ const MAX_GOALS = 10;
 // Zustand
 let state = {
   timer: { running: false, startTime: null, elapsedMs: 0 },
-  teams: Array.from({ length: 6 }, (_, i) => ({
+  teams: Array.from({ length: 8 }, (_, i) => ({
     id: i + 1,
     name: 'Team ' + (i + 1),
     goals: 0,
@@ -151,4 +151,5 @@ setInterval(function () {
 var PORT = process.env.PORT || 3000;
 server.listen(PORT, function () {
   console.log('Server läuft auf http://localhost:' + PORT);
+
 });
