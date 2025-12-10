@@ -90,7 +90,7 @@ body{
   padding:12px 14px;
   display:grid;
   gap:var(--gap);
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:repeat(4, 1fr);
   grid-template-rows:repeat(3, 1fr);
   /* Versuche, ohne Scrollen auszukommen, wenn möglich */
   min-height:0;
@@ -149,4 +149,5 @@ body{
 /* ---------- Barrierefreiheit ---------- */
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important; animation:none!important}
+
 }
